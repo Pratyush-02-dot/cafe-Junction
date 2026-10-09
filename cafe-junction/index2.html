@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Management System</title>
+  <link rel="stylesheet" href="./index 2.css">
+</head>
+<body>
+    <div class="header">
+        <h1>𝑪𝒂𝒇𝒆 𝑱𝒖𝒏𝒄𝒕𝒊𝒐𝒏 </h1>
+        <div class="view">
+            <button class="btn" id="viewCartBtn">View cart</button>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-item" data-name="Coffee" data-price="200">
+            <img src="./COFFE.jpg" alt="Coffee">
+            <h3>Coffee</h3>
+            <p>A classic cup of coffee.</p>
+            <p class="price">200₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+        <div class="menu-item" data-name="Black Tea" data-price="50">
+            <img src="./TEA.jpg" alt="Latte">
+            <h3>Black Tea</h3>
+            <p>Simplicity at it's Finest</p>
+            <p class="price">50₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+        <div class="menu-item" data-name="Croissant" data-price="80">
+            <img src="./PETIS.jpg" alt="Croissant">
+            <h3>Croissant</h3>
+            <p>Flaky and buttery pastry.</p>
+            <p class="price">80₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+        <div class="menu-item" data-name="Sandwich" data-price="100">
+            <img src="./BURGER.jpg" alt="Sandwich">
+            <h3>Sandwich</h3>
+            <p>Freshly made sandwich.</p>
+            <p class="price">100₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+        <div class="menu-item" data-name="Smoothie" data-price="100">
+            <img src="./PASTA.jpg" alt="Muffin">
+            <h3>Smoothie</h3>
+            <p>Smoothie Bliss</p>
+            <p class="price">100₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+        <div class="menu-item" data-name="Ice Cream" data-price="50">
+            <img src="./ICE.jpg" alt="Tea">
+            <h3>Ice Cream</h3>
+            <p>Various kinds of Ice Cream</p>
+            <p class="price">50₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+        <div class="menu-item" data-name="Pizza" data-price="300">
+            <img src="./FRENCH.jpg" alt="pizza">
+            <h3>Pizza</h3>
+            <p>Pizza pawa ware</p>
+            <p class="price">300₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+        <div class="menu-item" data-name="Cake" data-price="400">
+            <img src="./CAKE1.jpg" alt="cake">
+            <h3>Cake</h3>
+            <p>Cake wala</p>
+            <p class="price">400₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+        <div class="menu-item" data-name="Coke" data-price="40">
+            <img src="./COCE.jpg" alt="coco">
+            <h3>coke</h3>
+            <p>Thanda  ho jaye</p>
+            <p class="price">40₹</p>
+            <button class="btn addToCartBtn">Add to cart</button>
+        </div>
+
+    </div>
+
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0₹</span></p>
+           <a href="./index3.html"> <button id="orderbtn">Order Now</button></a>
+        </div>
+    </div>
+
+    <script src="./index2.js"></script>
+    <script src="./function.js"></script>
+</body>
+</html>
